@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include meta tags, links, and title from the original HTML -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <!-- Include the header from the original HTML -->
+    <!-- You may want to modify the navigation links and add a new link for the "About" page -->
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#"><img src="logo-no-background.webp" alt=""></a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="#" style="--navAni:3">Skills</a></li>
+                <li><a href="#" style="--navAni:4">Portfolio</a></li>
+                <li><a href="#" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+    <section class="container">
+        <!-- About Section -->
+        <div class="main">
+            <div class="images1">
+                <img src="person.png" alt="" class="img-w">
+                <!-- Add any additional styling or content for the about image -->
+            </div>
+            <div class="detail">
+                <h3>About Me</h3>
+                <p> I am a second-year <span>Computer Science </span> graduate student at <span>Medicaps University</span> with a passion for problem-solving. As a winner of the <span>Reliance Foundation Scholar</span>, I have demonstrated my dedication and commitment to my studies.
+
+                    I am particularly passionate about coding and algorithms and enjoy honing my skills on platforms like <span>HackerRank</span> and <span>CodeChef</span>. I have also gained practical experience through internships at <span>Oasis Infobyte</span> and <span>CodeClouse</span>, where I successfully completed task submissions.
+                    
+                    With a strong foundation in computer science and a drive to continuously improve, I am eager to contribute my skills and knowledge to the industry. I am seeking opportunities to apply my <span>problem-solving</span> expertise and make a positive impact in the field.
+                    
+                     </p>
+</div>
+                  <!-- Education Section -->
+                  <div class="education">
+                    <h3>Education</h3>
+
+                    <!-- Bachelor's Degree -->
+                    <div class="degree">
+                        <h4>Bachelor's Degree</h4>
+                        <p>Medicaps University | 2023 August - 2026 May</p>
+                        <p>
+                            Currently pursuing a Bachelor of Science in Computer Science at Medicaps University,
+                            where I am gaining a strong foundation in programming, algorithms, and software development.
+                            Excited to contribute to the field and apply my skills in real-world projects.
+                        </p>
+                    </div>
+
+                    <!-- 12th Board -->
+                    <div class="degree">
+                        <h4>12th Board</h4>
+                        <p>Rishi Valley Academy | 2021 April - 2022 March</p>
+                        <p>
+                            I am a commerce student who completed the 12th MP Board with a 73.4 percent in the
+                            field of Commerce with Maths. I created this blog to share my knowledge and
+                            experience with other students so they can make the most of their studies and achieve
+                            their academic goals.
+                        </p>
+                    </div>
+                </div>
+                <!-- You can add more content here, such as your education, experience, etc. -->
+            </div>
+        <!-- </div> -->
+        <!-- End About Section -->
+    </section>
+
+    <!-- Include the dark mode script from the original HTML -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
