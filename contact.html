@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <title>Skill</title>
 </head>
 
@@ -37,6 +38,42 @@
         </div>
     </header>
 
+<section class="container">
+    <div class="contact">
+
+
+        <!-- Contact Information and Form -->
+        <div class="contact-content">
+            <!-- Contact Information (Left Side) -->
+            <div class="contact-info">
+              <h2>Get in touch</h2>
+                <p>Thank you for taking the time to explore my portfolio. I'm thrilled that you're interested in connecting with me! Whether you're looking to discuss a potential project, explore collaboration opportunities, or simply have a question, I'm here to help.</p>
+
+                <p><strong>My Address:</strong> Indore</p>
+                <p><strong>Phone:</strong> +91 8269054913</p>
+                <p><strong>Email:</strong> <a href="mailto:aansh6435@gmail.com">aansh6435@gmail.com</a></p>
+            </div>
+
+            <!-- Contact Form (Right Side) -->
+            <form id="contactForm" action="https://formspree.io/f/xyyrygrg" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
 
 
@@ -58,5 +95,8 @@
             }
         });
     </script>
+          </div>
+       
+    </section>
 </body>
 </html>
