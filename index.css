@@ -373,7 +373,22 @@ li a:hover {
     }
 }
 
+.cv-download-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 3.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
 
+.cv-download-btn:hover {
+    background-color: var(--primary-dark);
+}
 /* Include styles from the original CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
