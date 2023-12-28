@@ -387,13 +387,7 @@ li a:hover {
 .cv-download-btn:hover {
     background-color: var(--primary-dark);
 }
-/* Include styles from the original CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
 
-/* Add any additional styles for the "About" page */
-
-/* Add styles specific to the "About" section */
 .main {
     padding: 3rem 0; /* Adjusted padding for the "About Me" section */
     display: flex;
@@ -505,19 +499,19 @@ li a:hover {
     color: var(--primary-color);
 }
 
-.skills h3 {
+ h3 {
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 3rem;
     text-decoration: underline;
 }
 
-.skills h4 {
+ h4 {
     color: #000;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.skills p {
+ p {
     color: #555;
     font-size: 1rem;
     line-height: 1.6;
@@ -537,4 +531,355 @@ li a:hover {
 .dark-mode .skill-card {
     background-color: var(--primary-dark);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Individual Columns */
+.column {
+    flex: 0 0 48%; /* Adjust the width based on your preference */
+}
+
+
+.portfolio {
+    padding: 6rem 0;
+    text-align: center;
+}
+.experience {
+    margin-top: 2rem;
+}
+.experience-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.achievements {
+    margin-top: 2rem;
+}
+
+/* Achievement Item */
+.achievement-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.dark-mode .achievement-item, .dark-mode .experience-item {
+    background-color: var(--primary-dark);
+}
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: #fff;
+}
+.dark-mode .column h4, h4{
+    color: #f9532d;
+}
+h3{
+    color: black;
+}
+
+
+.contact {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.contact h1 {
+    margin-bottom: 5%;
+    
+}
+
+/* Contact Information Styles */
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: -10%;
+    
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-right: -10%;
+    margin-top: -1%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* Dark Mode Styles */
+.dark-mode .contact-info p, 
+.dark-mode button{
+    color: whitesmoke;
+}
+.dark-mode .contact-info h2, 
+.dark-mode label {
+    color :  #f9532d;
+}
+
+.dark-mode input,
+.dark-mode textarea
+ {
+
+   color:  black;
+}
+/* Existing styles ... */
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    body {
+        height: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    ul {
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 3.4rem;
+        left: -100%;
+        z-index: 111111;
+    }
+
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    #click:checked~ul {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    .dark-mode .menu {
+        color: var(--primary-color);
+    }
+
+    .dark-mode ul {
+        background: var(--primary-dark);
+    }
+
+    .mode {
+        position: absolute;
+        right: 8rem;
+    }
+
+    .images {
+        width: 100%;
+        margin: auto;
+    }
+
+    .main {
+        margin-top: 2rem;
+    }
+
+    /* Additional Mobile Styles */
+    .container {
+        padding: 0 1.6rem;
+    }
+
+    .page-header {
+        padding: 1rem 1.6rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        gap: .4rem;
+    }
+
+    li a {
+        padding: .3rem 1rem;
+        font-size: 1rem;
+    }
+
+    .main h3 {
+        font-size: 1.3rem;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .social a {
+        font-size: 1.2rem;
+    }
+
+    .images {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact {
+        padding: 3rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        top: 4rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    ul {
+        gap: 1rem;
+    }
+
+    li a {
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .main h1 {
+        font-size: 1.8rem;
+    }
+
+    .social a {
+        font-size: 1.2rem;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .skills h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .skill-icon {
+        font-size: 1.5rem;
+    }
+
+    .main h3 {
+        font-size: 1.2rem;
+    }
+
+    .education h3 {
+        font-size: 1.2rem;
+    }
+
+    .degree p {
+        font-size: 1rem;
+    }
+  .experience-item p, .achievement-item p{
+        font-size: 1.5rem;
+    }
+   .column{
+    max-width: 100%;
+   }
 }
