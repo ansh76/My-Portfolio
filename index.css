@@ -164,20 +164,13 @@ li a:hover {
 
 
 .images {
-    border-radius: 10px;
+    border-radius: 50px;
     width: 450px;
-    
-}
-.images {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+     background: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     border-top: 2px solid var(--primary-color);
     margin-left: -60%;
 }
-
-/* Section 1 End */
-
-
 .dark-mode {
     background-color: var(--primary-dark);
     color: #ffffff;
