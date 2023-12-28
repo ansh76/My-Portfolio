@@ -166,11 +166,16 @@ li a:hover {
 .images {
     border-radius: 50px;
     width: 450px;
-     background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     border-top: 2px solid var(--primary-color);
     margin-left: -60%;
+    
 }
+
+
+
+
 .dark-mode {
     background-color: var(--primary-dark);
     color: #ffffff;
@@ -410,19 +415,11 @@ li a:hover {
     animation: topSideAni 1s ease forwards;
 }
 
-.images1 {
-    border-radius: 10px;
-    width: 450px;
-    
-    border-top: 2px solid var(--primary-color);
-    margin-right: 60%;
-    padding: auto;
-}
 
 /* Additional styles for the Education Section */
 .education {
-    margin-top: 15%;
-    text-align: center; /* Center-align the education section */
+    margin-top: 10%;
+    /* text-align: right; Center-align the education section */
 }
 
 .education h3 {
@@ -430,6 +427,8 @@ li a:hover {
     font-size: 1.8rem;
     opacity: 0;
     animation: topSideAni 1s ease forwards;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .degree {
@@ -461,8 +460,13 @@ li a:hover {
 .detail h3 {
     margin-bottom: 1rem;
 }
+
 .detail p{
     line-height: 1.7;
 }
 .detail span{
     color: #f9532d;
+}
+.hii{
+    text-decoration: underline;
+}
