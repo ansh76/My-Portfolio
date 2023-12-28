@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Skill</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="logo-no-background.webp"><img src="logo-no-background.webp" alt=""></a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="skill.html" style="--navAni:3">Skills</a></li>
+                <li><a href="portfolio.html" style="--navAni:4">Portfolio</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2>Skills</h2>
+
+            <!-- Technical Skills -->
+           
+                <h3>Technical Skills</h3>
+                <div class="skills-row">
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-html5'></i>
+                    </div>
+                    <h4>HTML</h4>
+                    <p>Strong knowledge of HTML for creating well-structured web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-css3'></i>
+                    </div>
+                    <h4>CSS</h4>
+                    <p>Proficient in CSS for styling web pages using Flexbox and Grid.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>Experienced in client-side scripting with JavaScript, including DOM manipulation and AJAX.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-java'></i>
+                    </div>
+                    <h4>Java</h4>
+                    <p>Proficient in Java programming language.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-code' ></i>
+                    </div>
+                    <h4>C</h4>
+                    <p>Knowledge of the C programming language.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-c-plus-plus'></i>
+                    </div>
+                    <h4>C++</h4>
+                    <p>Experience in C++ programming language.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-python'></i>
+                    </div>
+                    <h4>Python</h4>
+                    <p>Basic understanding of Python programming language.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-react'></i>
+                    </div>
+                    <h4>React</h4>
+                    <p>Familiarity with the React JavaScript library.</p>
+                </div>
+                <!-- Add more technical skills as needed -->
+           
+        </div>
+            <!-- Soft Skills -->
+        
+                <h3>Soft Skills</h3>
+                <div class="skills-row">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-line-chart'></i>
+                    </div>
+                    <h4>Leadership</h4>
+                    <p>Demonstrated leadership skills in various projects and team settings.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-chat'></i>
+                    </div>
+                    <h4>Communication</h4>
+                    <p>Effective communication skills both written and verbal.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-time'></i>
+                    </div>
+                    <h4>Time Management</h4>
+                    <p>Proven ability to manage time efficiently and meet project deadlines.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-briefcase'></i>
+                    </div>
+                    <h4>Teamwork</h4>
+                    <p>Collaborative approach and ability to work effectively in a team.</p>
+                </div>
+                <!-- Add more soft skills as needed -->
+            </div>
+        </div>
+            <!-- Add more skill cards as needed -->
+        
+        
+            <script>
+                const darkModeToggle = document.getElementById('darkModeToggle');
+                const body = document.body;
+                const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                    darkModeToggle.checked = true;
+                }
+                darkModeToggle.addEventListener('change', () => {
+                    if (darkModeToggle.checked) {
+                        body.classList.add('dark-mode');
+                        localStorage.setItem('darkMode', 'enabled');
+                    } else {
+                        body.classList.remove('dark-mode');
+                        localStorage.setItem('darkMode', 'disabled');
+                    }
+                });
+            </script>
+        </div>
+    
+    </section>
+</body>
+
+</html>
