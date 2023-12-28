@@ -470,3 +470,70 @@ li a:hover {
 .hii{
     text-decoration: underline;
 }
+
+/* Skills Section */
+.skills {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.skills h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    width: calc(33.333% - 20px); /* Adjust the width based on your preference */
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.skills h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.skills h4 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.skills p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Dark Mode Styles */
+.dark-mode .skills {
+    background-color: var(--primary-dark);
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: #fff;
+}
+
+.dark-mode .skill-card {
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
