@@ -495,8 +495,8 @@ li a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
-    margin-left: 2rem;
-    width: calc(33.333% - 20px); /* Adjust the width based on your preference */
+    margin-left: 0rem;
+    width: calc(23.333% - 20px); /* Adjust the width based on your preference */
 }
 
 .skill-icon {
@@ -508,7 +508,8 @@ li a:hover {
 .skills h3 {
     color: var(--primary-color);
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
 }
 
 .skills h4 {
