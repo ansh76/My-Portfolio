@@ -369,6 +369,7 @@ li a:hover {
     .main {
         margin-top: 2rem;
     }
+   
 }
 
 .cv-download-btn {
@@ -741,7 +742,7 @@ button:hover {
 
     .mode {
         position: absolute;
-        right: 8rem;
+        right: 6rem;
     }
 
     .images {
@@ -812,6 +813,27 @@ button:hover {
     .contact-form button {
         width: 100%;
     }
+    .detail {
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-top: -8%;
+        
+    }
+    .column{
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-top: -8%;
+        
+    }
+    .portfolio{
+        margin-top: -8%;
+        margin-left: 10%;
+        font-size: 1.8rem;
+    }
 }
 @media screen and (max-width: 600px) {
     ul {
@@ -876,10 +898,13 @@ button:hover {
     .degree p {
         font-size: 1rem;
     }
-  .experience-item p, .achievement-item p{
-        font-size: 1.5rem;
+  .experience-item, .achievement-item {
+    
+    margin-bottom: 2rem;
+    width: 15rem;
     }
-   .column{
-    max-width: 100%;
-   }
+   
+ 
+
+
 }
