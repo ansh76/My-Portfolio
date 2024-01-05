@@ -383,10 +383,13 @@ li a:hover {
     border-radius: 5px;
     margin-top: 3.5rem;
     transition: background-color 0.3s ease-in-out;
+    transition: .2s linear;
 }
 
 .cv-download-btn:hover {
     background-color: var(--primary-dark);
+    color: #f9532d;
+  box-shadow: 2px 2px 45px #f9532d;
 }
 
 .main {
@@ -903,8 +906,4 @@ button:hover {
     margin-bottom: 2rem;
     width: 15rem;
     }
-   
- 
-
-
 }
