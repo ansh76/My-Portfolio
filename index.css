@@ -83,9 +83,13 @@ li a {
     animation-delay: calc(.15s * var(--navAni));
 }
 
-li a.active,
+
 li a:hover {
-    color: var(--primary-color);
+    color :var(--primary-color);
+}
+
+.active::after{
+    color: #f9532d;
 }
 
 #click {
@@ -299,78 +303,7 @@ li a:hover {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 4.4rem;
-    }
 
-    .main h3 {
-        color: #000;
-        margin-top: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 0 1.6rem;
-    }
-}
-
-@media screen and (max-width:600px) {
-    body {
-        height: auto;
-    }
-
-    header {
-        height: auto;
-    }
-
-    ul {
-        background: #fff;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        top: 3.4rem;
-        left: -100%;
-        z-index: 111111;
-    }
-
-    .menu {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-
-    #click:checked~ul {
-        left: 0%;
-        transition: all 0.3s ease;
-    }
-    .dark-mode .menu {
-        color: var(--primary-color);
-    }
-
-    .dark-mode ul {
-        background: var(--primary-dark);
-    }
-
-    .mode {
-        position: absolute;
-        right: 4rem;
-    }
-    .images {
-        width: 100%;
-        margin: auto;
-    }
-
-    .main {
-        margin-top: 2rem;
-    }
-   
-}
 
 .cv-download-btn {
     display: inline-block;
@@ -469,35 +402,45 @@ li a:hover {
     text-decoration: underline;
 }
 
-/* Skills Section */
-.skills {
-    padding: 6rem 0;
+/* projects Section */
+.projects {
+    padding: 1rem 0;
     text-align: center;
 }
 
-.skills h2 {
+.projects h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-top: -4rem;
 }
-.skills-row {
+.projects-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-/* Skill Cards */
-.skill-card {
+.projects-row a{
+    text-decoration: none;
+}
+.project-icon img {
+    width: 55px;
+    height: fit-content;
+    margin-top: -50px;
+}
+/* project Cards */
+.project-card {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
     padding: 2rem;
     margin-bottom: 2rem;
-    margin-left: 0rem;
-    width: calc(23.333% - 20px); /* Adjust the width based on your preference */
+    margin-left: 1rem;
+    width: calc(40.333% ); 
+}
+.project-card:hover{
+    box-shadow: 0 0 20px#f9532d;
 }
 
-.skill-icon {
+.project-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
@@ -521,8 +464,56 @@ li a:hover {
     line-height: 1.6;
 }
 
-/* Dark Mode Styles */
+/* Skill Section */
+
+
+.skills{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.skills h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-top: -4rem;
+}
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills-row a{
+    text-decoration: none;
+}
+.skill-icon img {
+    width: 55px;
+    height: fit-content;
+    margin-top: -50px;
+}
+/* project Cards */
+.skill-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    width: calc(40.333% ); 
+}
+
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
 .dark-mode .skills {
+    background-color: var(--primary-dark);
+}
+
+/* Dark Mode Styles */
+.dark-mode .projects {
     background-color: var(--primary-dark);
 }
 
@@ -532,6 +523,10 @@ li a:hover {
     color: #fff;
 }
 
+.dark-mode .project-card {
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
 .dark-mode .skill-card {
     background-color: var(--primary-dark);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -561,7 +556,7 @@ li a:hover {
 .experience-item {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
     padding: 2rem;
     margin-bottom: 2rem;
 }
@@ -573,7 +568,7 @@ li a:hover {
 .achievement-item {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
     padding: 2rem;
     margin-bottom: 2rem;
 }
@@ -698,212 +693,12 @@ button:hover {
 
    color:  black;
 }
-/* Existing styles ... */
 
-/* Mobile Styles */
-@media screen and (max-width: 600px) {
-    body {
-        height: auto;
-    }
-
-    header {
-        height: auto;
-    }
-
-    ul {
-        background: #fff;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        top: 3.4rem;
-        left: -100%;
-        z-index: 111111;
-    }
-
-    .menu {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-
-    #click:checked~ul {
-        left: 0%;
-        transition: all 0.3s ease;
-    }
-
-    .dark-mode .menu {
-        color: var(--primary-color);
-    }
-
-    .dark-mode ul {
-        background: var(--primary-dark);
-    }
-
-    .mode {
-        position: absolute;
-        right: 6rem;
-    }
-
-    .images {
-        width: 100%;
-        margin: auto;
-    }
-
-    .main {
-        margin-top: 2rem;
-    }
-
-    /* Additional Mobile Styles */
-    .container {
-        padding: 0 1.6rem;
-    }
-
-    .page-header {
-        padding: 1rem 1.6rem;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    ul {
-        gap: .4rem;
-    }
-
-    li a {
-        padding: .3rem 1rem;
-        font-size: 1rem;
-    }
-
-    .main h3 {
-        font-size: 1.3rem;
-    }
-
-    .main h1 {
-        font-size: 2.5rem;
-    }
-
-    .social a {
-        font-size: 1.2rem;
-    }
-
-    .images {
-        width: 100%;
-        margin: auto;
-    }
-
-    .contact {
-        padding: 3rem 0;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .contact-content {
-        flex-direction: column;
-    }
-
-    .contact-info,
-    .contact-form {
-        max-width: 100%;
-    }
-
-    .contact-form button {
-        width: 100%;
-    }
-    .detail {
-        display: flex;
-        flex-direction:column;
-        align-items: flex-start;
-        margin-left: 10%;
-        margin-top: -8%;
-        
-    }
-    .column{
-        display: flex;
-        flex-direction:column;
-        align-items: flex-start;
-        margin-left: 10%;
-        margin-top: -8%;
-        
-    }
-    .portfolio{
-        margin-top: -8%;
-        margin-left: 10%;
-        font-size: 1.8rem;
-    }
+.footer{
+    text-align: center;
+    color: black;
+    font-style: normal;
 }
-@media screen and (max-width: 600px) {
-    ul {
-        flex-direction: column;
-        top: 4rem;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    ul {
-        gap: 1rem;
-    }
-
-    li a {
-        font-size: 1.2rem;
-        padding: 0.3rem 1rem;
-    }
-
-    .main h1 {
-        font-size: 1.8rem;
-    }
-
-    .social a {
-        font-size: 1.2rem;
-    }
-
-    .contact {
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .contact-info p {
-        font-size: 1rem;
-    }
-
-    .skills h3 {
-        font-size: 1.2rem;
-    }
-
-    .skill-card {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .skill-icon {
-        font-size: 1.5rem;
-    }
-
-    .main h3 {
-        font-size: 1.2rem;
-    }
-
-    .education h3 {
-        font-size: 1.2rem;
-    }
-
-    .degree p {
-        font-size: 1rem;
-    }
-  .experience-item, .achievement-item {
-    
-    margin-bottom: 2rem;
-    width: 15rem;
-    }
+.footer .bx{
+    color: #f9532d;
 }
