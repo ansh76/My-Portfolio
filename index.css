@@ -59,15 +59,19 @@ header {
     text-decoration: none;
 }
 
-ul {
+ul{
     display: flex;
     gap: .6rem;
     list-style-type: none;
     background-color: transparent;
     overflow: hidden;
 }
+ li{
+    display: inline;
+    margin: 10px;
+}
 
-li a {
+ li a {
     display: inline-block;
     padding: .3rem 1rem;
     color: #000;
@@ -84,12 +88,8 @@ li a {
 }
 
 
-li a:hover {
+.nav li a:hover {
     color :var(--primary-color);
-}
-
-.active::after{
-    color: #f9532d;
 }
 
 #click {
@@ -439,7 +439,9 @@ li a:hover {
 .project-card:hover{
     box-shadow: 0 0 20px#f9532d;
 }
-
+.dark-mode .project-card:hover{
+    box-shadow: 0 0 20px#f9532d;
+}
 .project-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -693,6 +695,10 @@ button:hover {
 
    color:  black;
 }
+/* Existing styles ... */
+
+/* Mobile Styles */
+
 
 .footer{
     text-align: center;
